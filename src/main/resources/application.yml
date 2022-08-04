@@ -1,0 +1,14 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://123.57.42.220:3306/youxuan?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: LYHWYZZNSB.wan1/
+
+server:
+  port: 8090
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: cn.edu.guet.youxuanapp.bean
