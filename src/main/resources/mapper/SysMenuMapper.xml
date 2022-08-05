@@ -33,7 +33,7 @@
     <select id="findChildrenByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
         SELECT m.*
         FROM sys_menu m, sys_user u,sys_role_menu rm
-        WHERE u.name = 'liwei'
+        WHERE u.name = #{userName,jdbcType=VARCHAR}
           AND m.parent_id IS NOT NULL
           AND u.role_id = rm.role_id
           AND rm.menu_id = m.id
