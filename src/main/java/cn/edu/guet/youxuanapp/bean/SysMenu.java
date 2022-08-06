@@ -15,6 +15,7 @@ public class SysMenu /* extends cn.edu.guet.youxuanapp.bean.BaseModel */{
 	private Integer type;
 	private String icon;
 	private Integer orderNum;
+	private Boolean show;
 
 	// 非数据库字段
 	private String parentName;
@@ -87,6 +88,13 @@ public class SysMenu /* extends cn.edu.guet.youxuanapp.bean.BaseModel */{
 		this.orderNum = orderNum;
 	}
 
+	public Boolean getShow() {
+		return show;
+	}
+
+	public void setShow(Boolean show) {
+		this.show = show;
+	}
 
 	public List<SysMenu> getChildren() {
 		return children;
